@@ -16,7 +16,7 @@ class ShelfAItem extends Component {
                         <Link to="/"><img src={Logo} alt="shelfie logo"/></Link>
                     </div>
                     <div className="shelf-item-center">
-                        <Link to="/"><h2>SHELF A</h2></Link>
+                        <Link to="/shelfa"><h2>SHELF A</h2></Link>
                     </div>
                     <div className="shelf-item-right">
                         <h2>Add to Bin 1</h2>
