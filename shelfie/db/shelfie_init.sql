@@ -1,5 +1,4 @@
 
-
 CREATE TABLE bins (
     id VARCHAR(40) PRIMARY KEY,
     shelf VARCHAR(150),
