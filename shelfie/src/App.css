@@ -15,6 +15,90 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.shelves {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    width: 50vw;
+    margin-top: 50px;
+}
+
+.shelves a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 50px;
+    background-color: var(--red);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    text-decoration: none;
+}
+
+.shelves a:hover {
+    background-color: var(--lightRed);
+}
+
+.shelves a:active {
+    border: var(--darkRed) solid 4px;
+}
+
+.body {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    width: 50vw;
+    margin-top: 50px;
+}
+
+.bin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 50px;
+    background-color: var(--red);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    text-decoration: none;
+}
+
+.bin a:hover {
+    background-color: var(--lightRed);
+}
+
+.bin a:active {
+    border: var(--darkRed) solid 4px;
+}
+
+.add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 50px;
+    background-color: var(--pink);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 16pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    outline: none;
+    text-decoration: none;
+}
+
+/* Home CSS */
 .header {
     display: flex;
     justify-content: center;
@@ -31,7 +115,7 @@
 .header div {
     display: flex;
     align-items: center;
-    width: 50vw;
+    width: 45vw;
     height: 60px;
 }
 
@@ -42,35 +126,40 @@
     margin-right: 10px;
 }
 
-.body {
-    display: grid;
-    grid-template-columns: repeat(1fr);
-    grid-gap: 20px;
-    justify-items: center;
-    width: 50vw;
-    margin-top: 50px;
+/* Shelf A CSS */
+.shelf-a-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 60px;
+    background-color: var(--darkRed);
 }
 
-.body a {
+.shelf-a-header a {
+    text-decoration: none;
+    color: white;
+}
+
+.shelf-a-header img {
+    width: 40px;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.a-left {
+    width: 30vw;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40vw;
-    height: 50px;
+}
+
+.a-right {
+    display: flex;
+    align-items: center;
+    width: 70vw;
+    height: 60px;
     background-color: var(--red);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16pt;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    outline: none;
-    text-decoration: none;
-}
-
-.body a:hover {
-    background-color: var(--lightRed);
-}
-
-.body a:active {
-    border: var(--darkRed) solid 4px;
+    padding-left: 20px;
 }

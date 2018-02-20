@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 
 import Header from './components/Header/Header';
-import Home from './components/Home';
-import ShelfA from './components/ShelfA';
-import ShelfB from './components/ShelfB';
-import ShelfC from './components/ShelfC';
-import ShelfD from './components/ShelfD';
+import Home from './components/Home/Home';
+import ShelfA from './components/ShelfA/ShelfA';
+import ShelfB from './components/ShelfB/ShelfB';
+import ShelfC from './components/ShelfC/ShelfC';
+import ShelfD from './components/ShelfD/ShelfD';
 
 
 class App extends Component {

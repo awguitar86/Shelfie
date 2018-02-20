@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../assets/logo.png';
-import '../App.css';
+import Logo from '../../assets/logo.png';
+import '../../App.css';
 
 class Home extends Component {
     constructor(props){
@@ -17,7 +17,7 @@ class Home extends Component {
                         <Link to="/"><h1>SHELFIE</h1></Link>
                     </div>
                 </header>
-                <div className="body">
+                <div className="shelves">
                     <Link to="/shelfa">Shelf A</Link>
                     <Link to="/shelfb">Shelf B</Link>
                     <Link to="/shelfc">Shelf C</Link>

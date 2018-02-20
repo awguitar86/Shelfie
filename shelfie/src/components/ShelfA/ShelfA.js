@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../assets/logo.png';
-import '../App.css';
+import Logo from '../../assets/logo.png';
+import '../../App.css';
 
-class ShelfC extends Component {
+class ShelfA extends Component {
     constructor(props) {
         super(props);
     }
@@ -11,18 +11,20 @@ class ShelfC extends Component {
     render() {
         return (
             <div className="wrapper">
-                <header className="header">
-                    <div>
+                <header className="shelf-a-header">
+                    <div className="a-left">
                         <Link to="/"><img src={Logo} alt="shelfie logo"/></Link>
-                        <Link to="/"><h1>SHELFIE</h1></Link>
+                    </div>
+                    <div className="a-right">
+                        <Link to="/"><h1>SHELF A</h1></Link>
                     </div>
                 </header>
                 <div className="body">
-                    <button>+ Add Inventory</button>
+                    <Link to="/" className="add">+ Add Inventory</Link>
                 </div>
             </div>
         );
     }
 }
 
-export default ShelfC;
+export default ShelfA;
