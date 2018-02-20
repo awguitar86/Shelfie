@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Logo from '../assets/logo.png';
 import '../App.css';
 
 class Home extends Component {
@@ -10,6 +11,12 @@ class Home extends Component {
     render(){
         return(
             <div className="wrapper">
+                <header className="header">
+                    <div>
+                        <Link to="/"><img src={Logo} alt="shelfie logo"/></Link>
+                        <Link to="/"><h1>SHELFIE</h1></Link>
+                    </div>
+                </header>
                 <div className="body">
                     <Link to="/shelfa">Shelf A</Link>
                     <Link to="/shelfb">Shelf B</Link>

@@ -13,7 +13,6 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header />
         <Route exact path="/" component={Home}/>
         <Route path="/shelfa" component={ShelfA}/>
         <Route path="/shelfb" component={ShelfB}/>
