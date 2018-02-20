@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './home.css';
-import Logo from '../../assets/logo.png';
 
 class Home extends Component {
     constructor(props){
@@ -10,12 +9,6 @@ class Home extends Component {
     render(){
         return(
             <div className="home-wrapper">
-                <header className="header">
-                    <div>
-                        <img src={Logo} alt="shelfi logo"/>
-                        <h1>SHELFIE</h1>
-                    </div>
-                </header>
                 <div className="home-body">
                     <button>Shelf A</button>
                     <button>Shelf B</button>

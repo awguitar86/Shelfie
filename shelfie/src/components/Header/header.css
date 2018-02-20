@@ -1,0 +1,24 @@
+@import '../../_colors.css';
+
+.header {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 60px;
+    background-color: var(--darkRed);
+    color: white;
+}
+
+.header div {
+    display: flex;
+    align-items: center;
+    width: 50vw;
+    height: 60px;
+}
+
+.header img {
+    width: 40px;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 10px;
+}
