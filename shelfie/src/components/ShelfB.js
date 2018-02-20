@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './shelfA.css';
+import '../App.css';
 
-class ShelfA extends Component {
+class ShelfB extends Component {
     constructor(props) {
         super(props);
     }
@@ -9,7 +9,7 @@ class ShelfA extends Component {
     render() {
         return (
             <div>
-                <div className="home-body">
+                <div className="body">
                     <button>+ Add Inventory</button>
                 </div>
             </div>
@@ -17,4 +17,4 @@ class ShelfA extends Component {
     }
 }
 
-export default ShelfA;
+export default ShelfB;

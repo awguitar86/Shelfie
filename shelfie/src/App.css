@@ -1,6 +1,13 @@
-@import '../../_colors.css';
+:root {
+    --darkRed: #AB2A19;
+    --red: #D34735;
+    --lightRed: #ED6B5A;
+    --pink: #FFB8AF;
+    --grey: #D8D8D8;
+    --green: #40F99B;
+}
 
-.home-wrapper {
+.wrapper {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -8,7 +15,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.home-body {
+.body {
     display: grid;
     grid-template-columns: repeat(1fr);
     grid-gap: 20px;
@@ -17,7 +24,7 @@
     margin-top: 50px;
 }
 
-.home-body button {
+.body a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,12 +37,13 @@
     font-size: 16pt;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     outline: none;
+    text-decoration: none;
 }
 
-.home-body button:hover {
+.body a:hover {
     background-color: var(--lightRed);
 }
 
-.home-body button:active {
+.body a:active {
     border: var(--darkRed) solid 4px;
 }
