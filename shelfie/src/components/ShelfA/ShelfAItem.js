@@ -3,32 +3,33 @@ import { Link } from 'react-router-dom';
 import Logo from '../../assets/logo.png';
 import './shelfA.css';
 
-class ShelfA extends Component {
-    constructor(props) {
+class ShelfAItem extends Component {
+    constructor(props){
         super(props);
     }
 
     render() {
-        return (
+        return(
             <div className="wrapper">
                 <header className="shelf-header">
-                    <div className="shelf-left">
+                    <div className="shelf-item-left">
                         <Link to="/"><img src={Logo} alt="shelfie logo"/></Link>
                     </div>
-                    <div className="shelf-right">
+                    <div className="shelf-item-center">
                         <Link to="/"><h2>SHELF A</h2></Link>
+                    </div>
+                    <div className="shelf-item-right">
+                        <h2>Add to Bin 1</h2>
                     </div>
                 </header>
                 <div className="body">
-                    <Link to="/create/A1" className="add bin-1">+ Add Inventory</Link>
-                    <Link to="/" className="add bin-2">+ Add Inventory</Link>
-                    <Link to="/" className="add bin-3">+ Add Inventory</Link>
-                    <Link to="/" className="add bin-4">+ Add Inventory</Link>
-                    <Link to="/" className="add bin-5">+ Add Inventory</Link>
+                    <input className="name" placeholder="Name"/>
+                    <input className="price" placeholder="$Price"/>
+                    <button className="add-to-inventory">+ Add to Inventory</button>
                 </div>
             </div>
         );
     }
 }
 
-export default ShelfA;
+export default ShelfAItem;

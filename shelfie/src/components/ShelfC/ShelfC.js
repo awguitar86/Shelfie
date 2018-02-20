@@ -16,11 +16,15 @@ class ShelfC extends Component {
                         <Link to="/"><img src={Logo} alt="shelfie logo"/></Link>
                     </div>
                     <div className="shelf-right">
-                        <Link to="/"><h1>SHELF C</h1></Link>
+                        <Link to="/"><h2>SHELF C</h2></Link>
                     </div>
                 </header>
                 <div className="body">
-                    <Link to="/" className="add">+ Add Inventory</Link>
+                    <Link to="/" className="add bin-1">+ Add Inventory</Link>
+                    <Link to="/" className="add bin-2">+ Add Inventory</Link>
+                    <Link to="/" className="add bin-3">+ Add Inventory</Link>
+                    <Link to="/" className="add bin-4">+ Add Inventory</Link>
+                    <Link to="/" className="add bin-5">+ Add Inventory</Link>
                 </div>
             </div>
         );

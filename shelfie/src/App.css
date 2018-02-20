@@ -71,6 +71,7 @@
     width: 100vw;
     height: 60px;
     background-color: var(--darkRed);
+    color: white;
 }
 
 .shelf-header a {

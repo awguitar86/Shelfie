@@ -14,7 +14,7 @@ class Home extends Component {
                 <header className="header">
                     <div>
                         <Link to="/"><img src={Logo} alt="shelfie logo"/></Link>
-                        <Link to="/"><h1>SHELFIE</h1></Link>
+                        <Link to="/"><h2>SHELFIE</h2></Link>
                     </div>
                 </header>
                 <div className="shelves">
