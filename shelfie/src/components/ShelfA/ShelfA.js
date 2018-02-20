@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/logo.png';
-import '../../App.css';
+import './shelfA.css';
 
 class ShelfA extends Component {
     constructor(props) {
@@ -11,11 +11,11 @@ class ShelfA extends Component {
     render() {
         return (
             <div className="wrapper">
-                <header className="shelf-a-header">
-                    <div className="a-left">
+                <header className="shelf-header">
+                    <div className="shelf-left">
                         <Link to="/"><img src={Logo} alt="shelfie logo"/></Link>
                     </div>
-                    <div className="a-right">
+                    <div className="shelf-right">
                         <Link to="/"><h1>SHELF A</h1></Link>
                     </div>
                 </header>
