@@ -9,13 +9,19 @@ class Home extends Component {
 
     render(){
         return(
-            <div className="home-body">
+            <div className="home-wrapper">
                 <header className="header">
                     <div>
                         <img src={Logo} alt="shelfi logo"/>
                         <h1>SHELFIE</h1>
                     </div>
                 </header>
+                <div className="home-body">
+                    <button>Shelf A</button>
+                    <button>Shelf B</button>
+                    <button>Shelf C</button>
+                    <button>Shelf D</button>
+                </div>
             </div>
         );
     }

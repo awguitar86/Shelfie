@@ -1,8 +1,9 @@
 @import '../../_colors.css';
 
-.home-body {
+.home-wrapper {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -28,4 +29,36 @@
     height: auto;
     margin-left: 20px;
     margin-right: 10px;
+}
+
+.home-body {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    width: 50vw;
+    margin-top: 50px;
+}
+
+.home-body button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 50px;
+    background-color: var(--red);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+}
+
+.home-body button:hover {
+    background-color: var(--lightRed);
+}
+
+.home-body button:active {
+    border: var(--darkRed) solid 4px;
 }
