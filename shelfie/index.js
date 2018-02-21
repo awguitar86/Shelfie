@@ -1,15 +1,16 @@
-var express = require('express');
-var bodyParser = require('body-parser');
+const express = require('express');
+const bodyParser = require('body-parser');
 const massive = require('massive');
 const { getBins } = require('./shelfie.router');
-const connectionInfo = 'postgres://daybzsec:F-Fru6MI6Z6iOjzbDSYrmgvn6ugqNSBg@baasu.db.elephantsql.com:5432/daybzsec?ssl=true';
-var app = express();
+const connectionInfo ='postgres://daybzsec:F-Fru6MI6Z6iOjzbDSYrmgvn6ugqNSBg@baasu.db.elephantsql.com:5432/daybzsec';
+const app = express();
 
 app.use(bodyParser.json());
 
 massive(connectionInfo)
     .then(instance => {
-        app.set('instance', instance);
+        app.set('instance', instance); //the instance is massive getting the data from the database
+
         return instance.seed();
     })
     .then(data => {console.log('table successfully reset');})
